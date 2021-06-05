@@ -44,6 +44,7 @@ class SiswaController extends Controller
             'id_guru' => 1,
         ]);
         
+        
         return redirect('');
     }
 
