@@ -23,12 +23,12 @@ class SiswaController extends Controller
         )
         ->get();
 
-        return view('index', ['siswa' => $siswa]);
+        return view('index_0241', ['siswa' => $siswa]);
     }
 
     public function add()
     {
-        return view('add');
+        return view('add_0241');
     }
 
     public function tambah(Request $request)
@@ -62,7 +62,7 @@ class SiswaController extends Controller
         )
         ->where('id_siswa', $id)
         ->get();
-        return view('edit', ['siswa' => $siswa]);
+        return view('edit_0241', ['siswa' => $siswa]);
     }
 
     public function update(Request $request)
