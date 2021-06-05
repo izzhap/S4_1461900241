@@ -12,10 +12,10 @@
 
 <body>
     <center>
-        <h3>TAMBAH BEASISWA</h3>
+        <h3>TAMBAH SISWA</h3>
     </center>
 
-    <form action="/beasiswa/tambah" method="post">
+    <form action="/siswa/tambah" method="post">
         {{ csrf_field() }}
         <input class="form-control form-control-sm" type="text" name="nama_b" placeholder="Nama Siswa"> <br> <br>
         <input class="form-control form-control-sm" type="text" name="alamat_b" placeholder="Alamat Siswa"> <br> <br>

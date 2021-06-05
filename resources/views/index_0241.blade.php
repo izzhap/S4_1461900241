@@ -35,16 +35,16 @@
 
 
             <td>
-                <a class="btn btn-primary btn-sm" href="/beasiswa/edit/{{ $d->id_siswa }}">Edit</a>
+                <a class="btn btn-primary btn-sm" href="/siswa/edit/{{ $d->id_siswa }}">Edit</a>
                 |
-                <a class="btn btn-secondary btn-sm" href="/beasiswa/del/{{ $d->id_siswa }}">Hapus</a>
+                <a class="btn btn-secondary btn-sm" href="/siswa/del/{{ $d->id_siswa }}">Hapus</a>
             </td>
         </tr>
         @endforeach
     </table>
     <br>
     <center>
-    <a class="btn btn-primary btn-lg" href="/beasiswa/add">+ Tambah</a>
+    <a class="btn btn-primary btn-lg" href="/siswa/add">+ Tambah</a>
     </center>
     </div>
 </body>

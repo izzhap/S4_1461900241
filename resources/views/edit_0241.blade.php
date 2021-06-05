@@ -11,11 +11,11 @@
 
 <body>
     <center>
-        <h3>EDIT BEASISWA</h3>
+        <h3>EDIT SISWA</h3>
     </center>
 
     @foreach($siswa as $d)
-    <form action="/beasiswa/update" method="post">
+    <form action="/siswa/update" method="post">
         {{ csrf_field() }}
         <input type="hidden" name="id" placeholder="ID" value="{{ $d->id_siswa }}">
         <input class="form-control form-control-sm" type="text" name="nama_b" placeholder="Nama Siswa" value="{{ $d->nama_siswa }}"> <br> <br>
