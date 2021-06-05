@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/', 'App\Http\Controllers\SiswaController@index');
+Route::get('/beasiswa/add', 'App\Http\Controllers\SiswaController@add');
+Route::post('/beasiswa/tambah', 'App\Http\Controllers\SiswaController@tambah');
+Route::get('/beasiswa/edit/{id}', 'App\Http\Controllers\SiswaController@edit');
+Route::post('/beasiswa/update', 'App\Http\Controllers\SiswaController@update');
+Route::get('/beasiswa/del/{id}', 'App\Http\Controllers\SiswaController@del');
