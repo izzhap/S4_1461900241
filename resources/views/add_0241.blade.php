@@ -12,13 +12,13 @@
 
 <body>
     <center>
-        <h3>TAMBAH SISWA</h3>
+        <h3>TAMBAH DOKTER</h3>
     </center>
 
-    <form action="/siswa/tambah" method="post">
+    <form action="/dokter/tambah" method="post">
         {{ csrf_field() }}
-        <input class="form-control form-control-sm" type="text" name="nama_b" placeholder="Nama Siswa"> <br> <br>
-        <input class="form-control form-control-sm" type="text" name="alamat_b" placeholder="Alamat Siswa"> <br> <br>
+        <input class="form-control form-control-sm" type="text" name="nama_b" placeholder="Nama Dokter"> <br> <br>
+        <input class="form-control form-control-sm" type="text" name="jabatan_b" placeholder="Jabatan"> <br> <br>
         <input class="btn btn-primary btn-sm" type="submit" value="Tambah">
     </form>
 </body>

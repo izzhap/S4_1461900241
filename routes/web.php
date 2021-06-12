@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', 'App\Http\Controllers\SiswaController@index');
-Route::get('/siswa/add', 'App\Http\Controllers\SiswaController@add');
-Route::post('/siswa/tambah', 'App\Http\Controllers\SiswaController@tambah');
-Route::get('/siswa/edit/{id}', 'App\Http\Controllers\SiswaController@edit');
-Route::post('/siswa/update', 'App\Http\Controllers\SiswaController@update');
-Route::get('/siswa/del/{id}', 'App\Http\Controllers\SiswaController@del');
+Route::get('/', 'App\Http\Controllers\DokterController@index');
+Route::get('/dokter/add', 'App\Http\Controllers\DokterController@add');
+Route::post('/dokter/tambah', 'App\Http\Controllers\DokterController@tambah');
+Route::get('/dokter/edit/{id}', 'App\Http\Controllers\DokterController@edit');
+Route::post('/dokter/update', 'App\Http\Controllers\DokterController@update');
+Route::get('/dokter/del/{id}', 'App\Http\Controllers\DokterController@del');

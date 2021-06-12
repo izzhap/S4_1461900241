@@ -11,15 +11,15 @@
 
 <body>
     <center>
-        <h3>EDIT SISWA</h3>
+        <h3>EDIT DOKTER</h3>
     </center>
 
-    @foreach($siswa as $d)
-    <form action="/siswa/update" method="post">
+    @foreach($dokter as $d)
+    <form action="/dokter/update" method="post">
         {{ csrf_field() }}
-        <input type="hidden" name="id" placeholder="ID" value="{{ $d->id_siswa }}">
-        <input class="form-control form-control-sm" type="text" name="nama_b" placeholder="Nama Siswa" value="{{ $d->nama_siswa }}"> <br> <br>
-        <input class="form-control form-control-sm" type="text" name="alamat_b" placeholder="Alamat Siswa" value="{{ $d->alamat }}"> <br> <br>
+        <input type="hidden" name="id" placeholder="ID" value="{{ $d->id_dokter }}">
+        <input class="form-control form-control-sm" type="text" name="nama_b" placeholder="Nama Dokter" value="{{ $d->nama_dokter }}"> <br> <br>
+        <input class="form-control form-control-sm" type="text" name="jabatan_b" placeholder="Jabatan" value="{{ $d->jabatan }}"> <br> <br>
         <input class="btn btn-primary btn-sm" type="submit" value="Edit">
     </form>
     @endforeach
