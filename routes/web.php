@@ -21,3 +21,6 @@ Route::post('/dokter/tambah', 'App\Http\Controllers\DokterController@tambah');
 Route::get('/dokter/edit/{id}', 'App\Http\Controllers\DokterController@edit');
 Route::post('/dokter/update', 'App\Http\Controllers\DokterController@update');
 Route::get('/dokter/del/{id}', 'App\Http\Controllers\DokterController@del');
+Route::get('/dokter/importview', 'App\Http\Controllers\DokterImportController@index');
+Route::post('/dokter/import', 'App\Http\Controllers\DokterImportController@import');
+

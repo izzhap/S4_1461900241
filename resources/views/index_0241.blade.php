@@ -7,10 +7,12 @@
 </head>
 
 <body>
-    <div class="panel panel-default">
+    <div class="panel panel-default" style="padding:20px">
     <center>
         <h3 class="font-weight-bold">LIST DOKTER</h3>
     </center>
+
+    <a class="btn btn-primary btn-sm" href="/dokter/importview">Import</a>
 
     <table border="1" class="table">
         <tr>
